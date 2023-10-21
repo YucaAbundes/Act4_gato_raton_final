@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .caja_principal {
+    position: relative;
+    width: 820px;
+    height: 530px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+  }
+
+  .parte_lateral {
+    background-color: rgb(229, 188, 133);
+    position: relative;
+    top: 20px;
+    right: 20px;
+    left: 525px;
+    width: 250px; /* Ajusta según sea necesario */
+    height: 480px; /* Ajusta según sea necesario */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+
+  #coordenadas, #turno {
+    margin-bottom: 10px;
+  }
+
+  .parte1 {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  canvas {
+    border: 2px solid black;
+  }
+
+  button {
+    margin-top: 10px;
+  }
+
+
+.miBotonClase {
+    position: absolute; /* Posición absoluta para ubicarlo libremente */
+    top: 400px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+    left: 550px; /* Ajusta la distancia desde la izquierda según tus necesidades */
+    padding: 20px 30px;
+    background-color: #ff5555;
+    color: white;
+    border:#333;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .miBotonClase:hover {
+    background-color: #ff0000;
+  }
+  
+
+
+  #coordenadas {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  #turno {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Color de texto oscuro */
+    margin-bottom: 20px;
+  }
+  
+
+  .contenedor-turno {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+  }
+  
+  #iconoJugador {
+    width: 100px; /* Ajusta el tamaño según tus necesidades */
+    height: 100px; /* Ajusta el tamaño según tus necesidades */
+    
+    margin-right: 5px; /* Ajusta el margen según tus necesidades */
+    position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+/* Estilo para hacer transparente la alerta de SweetAlert2 */
+.transparent-alert {
+  background-color: rgba(255, 255, 255, 0.7) !important; /* Ajusta el último valor para cambiar la opacidad */
+  color: rgb(0, 0, 0); /* Color del texto para que sea legible en el fondo oscuro */
+}
+
